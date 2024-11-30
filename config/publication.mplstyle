@@ -1,0 +1,61 @@
+# Matplotlib style for thesis plot
+
+# Set color cycle:
+axes.prop_cycle : (cycler('color', ['00467F','7FB9C2','F47735','EF4623','660460','00A18E','D5D10E','8A8D09']) + cycler('ls', ['-', '--', '-.', ':',  (0, (3, 5, 1, 5, 1, 5)), (0, (5, 10)), (0, (3, 10, 1, 10)), (0, (3, 10, 1, 10, 1, 10))]) + cycler('marker', ['o', 's', '^', 'v', '<', '>', 'd', 'h']))
+# axes.prop_cycle : (cycler('color', ['00467F','7FB9C2','F47735','EF4623']) + cycler('ls', [ '-', '--', '-.', ':']))
+
+# Set default figure size
+figure.figsize : 3.5, 3
+figure.dpi : 300
+
+# Set x axis
+xtick.direction : in
+xtick.major.size : 3
+xtick.major.width : 0.5
+xtick.minor.size : 1.5
+xtick.minor.width : 0.5
+xtick.minor.visible : False
+xtick.top : True
+
+# Set y axis
+ytick.direction : in
+ytick.major.size : 3
+ytick.major.width : 0.5
+ytick.minor.size : 1.5
+ytick.minor.width : 0.5
+ytick.minor.visible : False
+ytick.right : True
+
+# Set line widths
+axes.grid: False
+axes.linewidth : 0.5
+grid.linewidth : 0.5
+lines.linewidth : 1.0
+
+# Set marker size
+lines.markersize : 3
+
+# Legend settings
+legend.frameon : True
+legend.fontsize: 8
+legend.facecolor     : inherit
+legend.framealpha    : None 
+legend.scatterpoints : 3 # number of scatter points
+
+# Always save as 'tight'
+savefig.bbox : tight
+savefig.pad_inches : 0.05
+
+# Use serif fonts
+# font.serif : serif
+font.size : 11
+font.family : serif
+font.serif : Times
+mathtext.fontset : cm
+
+# Use LaTeX for math formatting
+text.usetex : True
+text.latex.preamble : \usepackage{amsmath} \usepackage{amssymb}
+
+pgf.rcfonts: False    # don't setup fonts from rc parameters
+pgf.preamble: \usepackage{url} \usepackage{unicode-math} \setmainfont{DejaVu Serif}  # serif font via preamble
