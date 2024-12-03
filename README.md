@@ -9,3 +9,5 @@ Code repo for Wasserstein Markets for Differentially-Private Data
 <li>Valuation simulations are coded models/_valuators.py</li>
 <li>Procurement simulations are coded models/_simulators.py</li>
 </ol>
+
+To run the Jupyter notebooks please ensure the packages in requirements.txt are installed, and Gurobi and Mosek solvers are installed. 
